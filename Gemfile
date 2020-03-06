@@ -7,6 +7,7 @@ gem 'oj'
 gem 'sinatra'
 
 group :development, :test do
+  gem 'rack-test'
   gem 'rspec'
   gem 'rubocop', require: false
   gem 'rubocop-rspec'

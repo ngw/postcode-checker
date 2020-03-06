@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.postcodes.io/postcodes/madeup
+    uri: https://api.postcodes.io/postcodes/SH241AA
     body:
       encoding: US-ASCII
       string: ''
@@ -23,11 +23,11 @@ http_interactions:
       Server:
       - nginx/1.14.0
       Date:
-      - Fri, 06 Mar 2020 05:57:07 GMT
+      - Fri, 06 Mar 2020 17:28:53 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '41'
+      - '43'
       Connection:
       - keep-alive
       X-Gnu:
@@ -35,10 +35,10 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       Etag:
-      - W/"29-T14TWaKfjMuMFPoRgcsDj2g1ORs"
+      - W/"2b-60dCBHUxbddknotWwisUCk6O8SA"
     body:
       encoding: UTF-8
-      string: '{"status":404,"error":"Invalid postcode"}'
+      string: '{"status":404,"error":"Postcode not found"}'
     http_version: null
-  recorded_at: Fri, 06 Mar 2020 05:57:07 GMT
+  recorded_at: Fri, 06 Mar 2020 17:28:53 GMT
 recorded_with: VCR 5.1.0

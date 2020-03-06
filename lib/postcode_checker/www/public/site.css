@@ -1,0 +1,23 @@
+h1 {
+  margin: 1em;
+}
+
+form, img {
+  margin: 4em;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+form label {
+  margin-right: 1em;
+}
+
+form input[type=submit] {
+  margin-left: 1em;
+}
+
+p, a {
+  margin: 1em 0 0 4em;
+}
