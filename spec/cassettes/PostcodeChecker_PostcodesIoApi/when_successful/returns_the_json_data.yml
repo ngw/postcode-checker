@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.postcodes.io/postcodes/e143qe
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - postcode_checker/v1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.14.0
+      Date:
+      - Fri, 06 Mar 2020 05:48:43 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '810'
+      Connection:
+      - keep-alive
+      X-Gnu:
+      - Michael J Blanchard
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"32a-LjC1hYF2kthScdhPPkgYo89zcRI"
+    body:
+      encoding: UTF-8
+      string: '{"status":200,"result":{"postcode":"E14 3QE","quality":1,"eastings":537433,"northings":178435,"country":"England","nhs_ha":"London","longitude":-0.021935,"latitude":51.488171,"european_electoral_region":"London","primary_care_trust":"Tower
+        Hamlets","region":"London","lsoa":"Tower Hamlets 031A","msoa":"Tower Hamlets
+        031","incode":"3QE","outcode":"E14","parliamentary_constituency":"Poplar and
+        Limehouse","admin_district":"Tower Hamlets","parish":"Tower Hamlets, unparished
+        area","admin_county":null,"admin_ward":"Island Gardens","ced":null,"ccg":"NHS
+        Tower Hamlets","nuts":"Tower Hamlets","codes":{"admin_district":"E09000030","admin_county":"E99999999","admin_ward":"E05009324","parish":"E43000220","parliamentary_constituency":"E14000882","ccg":"E38000186","ccg_id":"08V","ced":"E99999999","nuts":"UKI42"}}}'
+    http_version: null
+  recorded_at: Fri, 06 Mar 2020 05:48:43 GMT
+recorded_with: VCR 5.1.0

@@ -1,6 +1,14 @@
 # frozen_string_literal: true
 
-require './lib/postcode_checker'
+require 'vcr'
+
+require './config/environment'
+
+VCR.configure do |vcr|
+  vcr.cassette_library_dir = 'spec/cassettes'
+  vcr.hook_into :webmock
+  vcr.configure_rspec_metadata!
+end
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
