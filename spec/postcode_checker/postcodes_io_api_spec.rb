@@ -7,7 +7,6 @@ describe PostcodeChecker::PostcodesIoApi, :vcr do
     let(:postcode) { 'e143qe' }
 
     it 'returns 200' do
-      puts 'ciao'
       expect(response['status']).to eq(200)
     end
 
@@ -23,7 +22,7 @@ describe PostcodeChecker::PostcodesIoApi, :vcr do
       expect { response }.to raise_error(ArgumentError)
     end
 
-    it 'has a proper error message' do
+    it 'returns a proper error message' do
       expect { response }.to raise_error("#{postcode} not found")
     end
   end
