@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.postcodes.io/postcodes/E10ND
+    uri: https://api.postcodes.io/postcodes/SW25JD
     body:
       encoding: US-ASCII
       string: ''
@@ -23,11 +23,11 @@ http_interactions:
       Server:
       - nginx/1.14.0
       Date:
-      - Fri, 06 Mar 2020 14:56:58 GMT
+      - Fri, 06 Mar 2020 17:29:31 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '807'
+      - '755'
       Connection:
       - keep-alive
       X-Gnu:
@@ -35,15 +35,13 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       Etag:
-      - W/"327-RqSrSU0Z8FQkLy4ASsljnBfRAxo"
+      - W/"2f3-6Q+D1x+sAQSs+XgXe5iC5I1NzmY"
     body:
       encoding: UTF-8
-      string: '{"status":200,"result":{"postcode":"E1 0ND","quality":1,"eastings":536059,"northings":181242,"country":"England","nhs_ha":"London","longitude":-0.040631,"latitude":51.513727,"european_electoral_region":"London","primary_care_trust":"Tower
-        Hamlets","region":"London","lsoa":"Tower Hamlets 019C","msoa":"Tower Hamlets
-        019","incode":"0ND","outcode":"E1","parliamentary_constituency":"Bethnal Green
-        and Bow","admin_district":"Tower Hamlets","parish":"Tower Hamlets, unparished
-        area","admin_county":null,"admin_ward":"St Dunstan''s","ced":null,"ccg":"NHS
-        Tower Hamlets","nuts":"Tower Hamlets","codes":{"admin_district":"E09000030","admin_county":"E99999999","admin_ward":"E05009329","parish":"E43000220","parliamentary_constituency":"E14000555","ccg":"E38000186","ccg_id":"08V","ced":"E99999999","nuts":"UKI42"}}}'
+      string: '{"status":200,"result":{"postcode":"SW2 5JD","quality":1,"eastings":530452,"northings":174798,"country":"England","nhs_ha":"London","longitude":-0.123765,"latitude":51.457138,"european_electoral_region":"London","primary_care_trust":"Lambeth","region":"London","lsoa":"Lambeth
+        020A","msoa":"Lambeth 020","incode":"5JD","outcode":"SW2","parliamentary_constituency":"Streatham","admin_district":"Lambeth","parish":"Lambeth,
+        unparished area","admin_county":null,"admin_ward":"Brixton Hill","ced":null,"ccg":"NHS
+        Lambeth","nuts":"Lambeth","codes":{"admin_district":"E09000022","admin_county":"E99999999","admin_ward":"E05000417","parish":"E43000212","parliamentary_constituency":"E14000978","ccg":"E38000092","ccg_id":"08K","ced":"E99999999","nuts":"UKI45"}}}'
     http_version: null
-  recorded_at: Fri, 06 Mar 2020 14:56:58 GMT
+  recorded_at: Fri, 06 Mar 2020 17:29:31 GMT
 recorded_with: VCR 5.1.0

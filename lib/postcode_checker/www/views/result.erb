@@ -1,0 +1,9 @@
+<% if result %>
+  <img src='https://media.giphy.com/media/xUNd9JGYR76ikCneJW/giphy.gif' />
+  <p><%= params[:postcode] %> is within our service area, YAY!</p>
+<% else %>
+  <img src='https://media.giphy.com/media/l4pTnK9ZhrUX8x6dG/giphy.gif' />
+  <p><%= params[:postcode] %> is not within our service area.</p>
+<% end %>
+
+<a href='/'>&larr; Go back</a>
