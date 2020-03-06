@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.postcodes.io/postcodes/AAA012
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - postcode_checker/v1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - nginx/1.14.0
+      Date:
+      - Fri, 06 Mar 2020 15:05:39 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '41'
+      Connection:
+      - keep-alive
+      X-Gnu:
+      - Michael J Blanchard
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"29-T14TWaKfjMuMFPoRgcsDj2g1ORs"
+    body:
+      encoding: UTF-8
+      string: '{"status":404,"error":"Invalid postcode"}'
+    http_version: null
+  recorded_at: Fri, 06 Mar 2020 15:05:39 GMT
+recorded_with: VCR 5.1.0

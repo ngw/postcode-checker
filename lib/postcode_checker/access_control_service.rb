@@ -6,8 +6,8 @@ module PostcodeChecker
       new(*args, &block).call
     end
 
-    def initialize(postcode:, whitelist_file_path:)
-      @postcode = postcode
+    def initialize(postcode_string:, whitelist_file_path:)
+      @postcode_string = postcode_string.gsub(' ', '')
       @whitelist_file_path = whitelist_file_path
     end
 
@@ -18,6 +18,15 @@ module PostcodeChecker
     end
 
     private
+
+    def postcode
+      @postcode ||=
+        begin
+          PostcodeChecker::PostcodesIoApi.get(postcode: @postcode_string)
+        rescue ArgumentError
+          { 'result' => { 'lsoa' => '', 'postcode' => @postcode_string } }
+        end
+    end
 
     def whitelist
       @whitelist ||= YAML.safe_load(File.open(@whitelist_file_path, 'r'))
@@ -30,7 +39,7 @@ module PostcodeChecker
     end
 
     def check_lsoa(lsoas)
-      lsoas.any? { |lsoa| @postcode['result']['lsoa'].match?(/#{lsoa}/i) }
+      lsoas.any? { |lsoa| postcode['result']['lsoa'].match?(/#{lsoa}/i) }
     end
 
     def valid_postcode?
@@ -40,8 +49,8 @@ module PostcodeChecker
     end
 
     def check_postcode(postcodes)
-      postcodes.any? do |postcode|
-        @postcode['result']['postcode'].gsub(' ', '').match(/#{postcode}/i)
+      postcodes.any? do |whitelisted|
+        postcode['result']['postcode'].gsub(' ', '').match(/#{whitelisted}/i)
       end
     end
   end
